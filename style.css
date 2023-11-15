@@ -125,6 +125,7 @@ form div{
 }
 em{
 	font-style: normal;
+	font-weight: 700;
 }
 .label span{
 	font-weight: 400;

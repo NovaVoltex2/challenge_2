@@ -2,6 +2,7 @@ let input = document.querySelector('.email')
 let errorhandel=document.querySelector('.errorh')
 let notif=document.querySelector('.notif')
 let Btnsubmit=document.querySelector('.dismiss')
+let mail=document.querySelector('.mail')
 
 
 Btnsubmit.addEventListener('click',()=>{
@@ -24,6 +25,7 @@ btn.addEventListener('click',e=>{
 		input.classList.remove('errorIn')
 		notif.classList.remove('hide')
 		notif.classList.add('show')
+		mail.innerHTML=input.value
 }else{
 		errorhandel.innerHTML = 'valid email required '
 		input.classList.add('errorIn')
